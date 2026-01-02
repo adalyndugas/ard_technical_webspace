@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adalyn Dugas | Technical Writer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ===== Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #111;
+    }
+
+    /* ===== Header / Nav ===== */
+    header {
+      max-width: 1200px;
+      margin: 40px auto 20px;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.1rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+    }
+
+    nav a {
+      margin-left: 32px;
+      text-decoration: none;
+      color: #111;
+      font-size: 0.9rem;
+      letter-spacing: 0.15em;
+      font-weight: 400;
+    }
+
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    /* ===== Hero Image ===== */
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .hero img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+      }
+
+      nav a {
+        margin-left: 0;
+        margin-right: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">ADALYN DUGAS</div>
+    <nav>
+      <a href="#">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="#">PORTFOLIO</a>
+      <a href="#">SERVICES</a>
+    </nav>
+  </header>
+
+  <main class="hero">
+    <img src="images/hero.jpg" alt="Adalyn Dugas working at desk">
+  </main>
+
+</body>
+</html>
