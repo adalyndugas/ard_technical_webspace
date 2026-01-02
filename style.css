@@ -1,0 +1,105 @@
+/* =========================
+   Base / Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.4;
+}
+
+/* =========================
+   Layout
+========================= */
+header,
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* =========================
+   Header / Nav (top bar)
+========================= */
+header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: opacity 0.15s ease-in-out;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Optional: subtle "active" state if you add class="active" to HOME */
+nav a.active {
+  opacity: 0.85;
+}
+
+/* =========================
+   Hero Image
+========================= */
+.hero {
+  padding-bottom: 32px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  nav a {
+    letter-spacing: 0.14em;
+  }
+}
