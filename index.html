@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Adalyn Dugas | Technical Writer</title>
+  <title>Adalyn Dugas | Technical Communicator</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
     /* ===== Reset ===== */
@@ -30,12 +30,26 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 24px;
     }
 
     .logo {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .logo-name {
       font-size: 1.1rem;
       font-weight: 600;
       letter-spacing: 0.08em;
+    }
+
+    .logo-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
     }
 
     nav a {
@@ -72,6 +86,12 @@
         gap: 16px;
       }
 
+      .logo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+      }
+
       nav a {
         margin-left: 0;
         margin-right: 24px;
@@ -83,12 +103,16 @@
 <body>
 
   <header>
-    <div class="logo">ADALYN DUGAS</div>
+    <div class="logo">
+      <span class="logo-name">ADALYN DUGAS</span>
+      <span class="logo-title"><strong>Technical Communicator</strong></span>
+    </div>
+
     <nav>
-      <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">PORTFOLIO</a>
-      <a href="#">SERVICES</a>
+      <a href="index.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="portfolio.html">PORTFOLIO</a>
+      <a href="services.html">SERVICES</a>
     </nav>
   </header>
 
@@ -97,12 +121,4 @@
   </main>
 
 </body>
-</html>
-<nav>
-  <a href="index.html">HOME</a>
-  <a href="about.html">ABOUT</a>
-  <a href="portfolio.html">PORTFOLIO</a>
-  <a href="services.html">SERVICES</a>
-</nav>
-<a href="index.html" class="active">HOME</a>
-<a href="about.html">ABOUT</a>
+</html> 
